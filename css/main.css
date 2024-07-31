@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*font-family: "Noto Sans KR", sans-serif;*/
+/* font-family: "Roboto", sans-serif;*/
+
+*{margin: 0; padding: 0;}
+html{font-size: 16px;}
+a{color: #333; text-decoration: none; display: block;}
+ul,ol{list-style: none;}
+img{border: 0; vertical-align: top;}
+.hidden{display: block; position: absolute; left: -1000%; top: 0; width: 1px; height: 1px; color: #fff; overflow: hidden;}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+/*메인 스타일*/
+.wrap{ width: 100%;
+       margin: 0 auto; 
+       padding: 0;
+      }
+#headerArea{ width: 100%;
+             position: fixed; 
+             top: 0; 
+             left: 0; 
+             z-index: 100; 
+             padding-bottom: 20px;
+             display: block;
+            
+            }
+#headerArea .logo{ width: 112px; 
+                   height: 21px; 
+                   margin: 40px 0 20px 50px;
+                  }
+#header .logo a{ width: 112px; 
+                 height: 21px; 
+                 text-indent: -1000px; 
+                 background: url(../images/HEADER/logo.png) no-repeat; overflow: hidden; 
+                }
+
+#headerArea #gnb{margin: 0 0 20px 50px;}
+
+#headerArea #gnb ul{ display: flex;
+                     margin: 0; 
+                     padding: 0; 
+                     list-style: none; 
+                     overflow: visible;
+                    }
+  #headerArea #gnb ul li{margin: 0 10px;}
+  #headerArea #gnb ul li a{font-size: 1.1rem; 
+                          text-align: left;                     margin-left: -7px;
+                        }
+  
+/*비쥬얼 영역(사진 + 7월의 마지막 세일)*/
+  .visual{ position: relative;
+           margin-top: 144PX;
+           margin-bottom: 100px;
+        }
+  .visual img{width: 100%; display: block;}
+  .visual a{ display: block; 
+             position: relative; 
+             text-align: center;       
+             color: #fff;
+            }
+.visual_headline{ position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  color: #fff;
+                  padding: 10px;
+                  width: 80%;
+                  box-sizing: border-box;
+                  font-size: 2rem;
+                }
+                
+/*WHAT'S NEW 영역*/
+.new_headline{padding: 10px;}    
+
+.new_menu{ padding: 10px; 
+           display: flex; 
+           margin: 0; 
+           list-style: none;
+          }                
+.new_menu li{ margin-right: 10px;}
+
+/*상품 영역*/
+.product{ display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 20px;
+          list-style: none;
+          margin-bottom:100px;
+        }
+.product li{ }
+.product a{ display: block;}
+.product img{width: 100%; height: auto; margin-bottom: 15px;} 
+.product dl{margin: 0; padding: 0;}
+.product dt{font-weight: bold; margin-bottom: 4px;}
+.product dd{margin: 0; font-size: 1rem;}
+
+/*광고영역*/
+.soon{padding: 50px 0; width: 100%; background: url(../images/CON_1/background.png) center; background-size: cover; margin-bottom: 100px;}
+.soon ul{ width: 60%; margin-left: 35%; margin-right: 5%;
+          display: grid; 
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+.soon img{width: 100%; 
+          object-fit: cover;
+        }
+
+/*추천영역*/
+.sug{ width: 90%; margin: 0 auto; overflow: hidden; position: relative;}
+.a h6{float: right;}
+        
+.sug_product{ display: grid;           
+              grid-template-columns: repeat(5,1fr);
+              list-style: none;
+              gap: 10px;
+              margin-top: 30px;
+              margin-bottom: 100px;    
+            }
+            .sug_product li .img{width: 100%; object-fit: cover;} 
+            .sug .view{position: absolute; top: 30px; right: 130px;}           
+
+/*footer 영역*/
+#footerArea {
+  background: rgb(16, 15, 32);
+  color: #d5d1f1f8;
+  margin: 0;
+  padding: 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer_left, .footer_right {
+  margin: 0 20px;
+}
+
+.footer_right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.footer_right ul li {
+  margin-bottom: 0 10px;
+}
+   
+
+      
+      
+
+
+
+
